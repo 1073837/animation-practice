@@ -1,0 +1,59 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  position: absolute;
+}
+.heart{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  margin: 35%;
+  animation-name: heartmove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.h1{
+  height: 50px;
+  width: 50px;
+  position: absolute:
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  background-color: #f88;
+}
+.h2{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  border-radius: 50%;
+  background-color: #f88;
+}
+.h3{
+  height: 49px;
+  width: 49px;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transform: rotate(45deg);
+  background-color: #f88;
+}
+@keyframes heartmove {
+  0% {
+    left: 50px;
+  }
+  25% {
+    transform: scale(2) rotate(-200deg);
+  }
+  50% {
+    transform: scale(3.25) rotate(-350deg);
+  }
+  100% {
+    left: 300px;
+  }
+}
